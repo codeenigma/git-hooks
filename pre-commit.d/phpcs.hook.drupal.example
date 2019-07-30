@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Rename to phpcs.hook and alter to your needs.
-
+GIT_DIR=$(git rev-parse --show-toplevel 2> /dev/null)
 PHPCS_BIN="phpcs"
 PHPCS_LOCAL_BIN="$GIT_DIR/vendor/bin/phpcs"
 if [ -x "$PHPCS_LOCAL_BIN" ]; then
