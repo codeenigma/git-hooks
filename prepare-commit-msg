@@ -1,8 +1,1 @@
-#!/bin/sh
-
-GIT_DIR=$(git rev-parse --show-toplevel 2> /dev/null)
-
-# shellcheck disable=SC1090
-. "$GIT_DIR/.git/hooks/include.sh"
-
-performHook "prepare-commit-msg"
+./include.sh
